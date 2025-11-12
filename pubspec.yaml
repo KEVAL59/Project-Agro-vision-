@@ -9,26 +9,32 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
   cupertino_icons: ^1.0.8
   http: ^1.1.0
   provider: ^6.1.1
-  # rive: ^0.13.1 # Commented out as Rive animations were removed
-
-  # This line is required for the login/signup file storage to work
-  # path_provider: ^2.1.3 # Commented out as local file storage was removed
+  fl_chart: ^0.66.2
+  geolocator: ^11.0.0
+  geocoding: ^3.0.0
+  sqflite: ^2.3.2
+  path: ^1.9.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
+  flutter_native_splash: ^2.3.10
 
 flutter:
+  generate: true
   uses-material-design: true
 
-  # Ensure you have these folders in your project's root directory
   assets:
-    # - assets/animations/ # Commented out as Rive animations were removed
     - assets/fonts/
+    - assets/sql/agrovision_database.sql
+    - assets/images/
 
   fonts:
     - family: Poppins
@@ -37,3 +43,10 @@ flutter:
         - asset: assets/fonts/Poppins-Bold.ttf
           weight: 700
 
+# --- Splash Screen Configuration ---
+flutter_native_splash:
+  color: "#4CAF50"
+  android_12:
+    color: "#4CAF50"
+  # To use a logo, add it to assets/images/logo.png and uncomment the line below.
+  # image: assets/images/logo.png
