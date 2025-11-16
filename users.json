@@ -1,0 +1,30 @@
+[
+  {
+    "fullName": "Akash",
+    "email": "akash7890@gamil.com",
+    "mobile": "9876543210",
+    "city": "Bhachau",
+    "password": "123456"
+  },
+  {
+    "fullName": "KEVALBHAI",
+    "email": "bamarotiyakeval007@gmail.com",
+    "mobile": "9106606440",
+    "city": "Khambhaliya",
+    "password": "KEVAL@123"
+  },
+  {
+    "fullName": "Akash",
+    "email": "akash8@gmail.com",
+    "mobile": "9313357315",
+    "city": "Gandhinagar",
+    "password": "123456"
+  },
+  {
+    "fullName": "Satyam",
+    "email": "satyam@gmail.com",
+    "mobile": "9408995481",
+    "city": "Rajkot",
+    "password": "op1234"
+  }
+]
