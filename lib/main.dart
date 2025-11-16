@@ -9,6 +9,7 @@ import 'package:agrovision/screens/dashboard/dashboard_screen.dart';
 import 'package:agrovision/screens/weather/forecast_screen.dart';
 import 'package:agrovision/screens/onboarding_screen.dart';
 import 'package:agrovision/database/database_helper.dart';
+import 'package:agrovision/screens/diagnosis/scan_crop_screen.dart'; // Import ScanCropScreen
 
 // All localization and provider logic has been removed.
 
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         '/onboarding': (context) => const OnboardingScreen(),
         '/': (context) => const LoginScreen(),
         '/signup': (context) => const SignupScreen(),
+        '/scanCrop': (context) => const ScanCropScreen(), // Added ScanCropScreen route
         '/profile': (context) {
           final userData = ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
           return ProfileScreen(userData: userData);

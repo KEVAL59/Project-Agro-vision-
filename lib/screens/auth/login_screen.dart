@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:async'; 
+import 'package:agrovision/config.dart'; // Import the config file
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -21,7 +22,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final _passwordController = TextEditingController();
 
   final String _fontFamily = 'Poppins';
-  final String _loginApiUrl = 'http://10.0.2.2:3000/login';
+  // Use the SERVER_BASE constant
+  final String _loginApiUrl = '$SERVER_BASE/login';
 
   @override
   void dispose() {

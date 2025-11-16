@@ -204,7 +204,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     DashboardItem(
         icon: Icons.camera_alt_outlined,
         title: 'Scan Crop',
-        routeName: '/scanner',
+        routeName: '/scanCrop', // Changed routeName to '/scanCrop' to match main.dart
         color: Colors.green,
         startGradient: Colors.green.shade300,
         endGradient: Colors.green.shade600),
@@ -349,7 +349,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             child: Center(
               child: Text('${snapshot.error}', textAlign: TextAlign.center, style: TextStyle(color: Colors.red[900], fontFamily: 'Poppins', fontSize: 15)),
             ),
-          );
+);
         }
         if (snapshot.hasData) {
           final weather = snapshot.data!;
